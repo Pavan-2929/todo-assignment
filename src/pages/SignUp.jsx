@@ -21,6 +21,10 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
+    if (user.password !== user.repeatPassword) {
+      toast.error("Password and Confirm-Password should be same");
+    }
+
     if (!agreedTerms) {
       toast.error("You must agree to the terms and conditions.");
       return;
