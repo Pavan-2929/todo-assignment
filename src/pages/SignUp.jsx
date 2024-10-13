@@ -23,6 +23,7 @@ const SignUp = () => {
 
     if (user.password !== user.repeatPassword) {
       toast.error("Password and Confirm-Password should be same");
+      return
     }
 
     if (!agreedTerms) {
