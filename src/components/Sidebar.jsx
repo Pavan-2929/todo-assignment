@@ -41,7 +41,7 @@ const Sidebar = () => {
           <FaUsers />
           Logout
         </div>
-        <div>@{user.username}</div>
+        <div>@{user && user.username}</div>
       </div>
 
       <div className="md:hidden fixed bottom-0 left-0 w-full bg-gray-100 flex justify-around items-center py-2 shadow-md">
